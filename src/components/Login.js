@@ -20,9 +20,10 @@ class App extends Component {
 
   login = (e) => {
     e.preventDefault()
-   document.cookie = "loggedIn=true;max-age=60*1000";
-
+    //automatically logs user out after 1 minute
+    document.cookie = "loggedIn=true;max-age=60*1000";
     window.location.replace("/")
+    // doesn't work without turnary ? : <Redirect to="/"/>
   }
 
   render() {

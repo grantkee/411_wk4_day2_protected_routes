@@ -20,4 +20,4 @@ const Car = (props) => {
     )
 }
 
-export default Car
+export default Car;
